@@ -1,0 +1,819 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600&display=swap");
+
+
+@font-face {
+    font-family: 'IBMPlexSansThai-ExtraLight';
+    src: url('../fonts/IBMPlexSansThai/IBMPlexSansThai-ExtraLight.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansThai/IBMPlexSansThai-ExtraLight.woff') format('woff'),
+        url('../fonts/IBMPlexSansThai/IBMPlexSansThai-ExtraLight.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansThai-Regular';
+    src: url('../fonts/IBMPlexSansThai/IBMPlexSansThai-Regular.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansThai/IBMPlexSansThai-Regular.woff') format('woff'),
+        url('../fonts/IBMPlexSansThai/IBMPlexSansThai-Regular.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansThai-Medium';
+    src: url('../fonts/IBMPlexSansThai/IBMPlexSansThai-Medium.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansThai/IBMPlexSansThai-Medium.woff') format('woff'),
+        url('../fonts/IBMPlexSansThai/IBMPlexSansThai-Medium.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansThai-Bold';
+    src: url('../fonts/IBMPlexSansThai/IBMPlexSansThai-Bold.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansThai/IBMPlexSansThai-Bold.woff') format('woff'),
+        url('../fonts/IBMPlexSansThai/IBMPlexSansThai-Bold.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bpselection-header {
+    width: 100%;
+    height: 20vw;
+    background: url(../img/bpselection-header.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown {
+    position: absolute;
+    color: #FFF;
+    left: 10vw;
+    text-align: center;
+}
+
+.logo img{
+    width: 20vw; 
+}
+
+.countdown-header {
+    background: url(../img/headweb.png) center;
+    background-size: 200% 200px;
+    background-size: cover;
+    text-align: center;
+    padding: 1px;
+    margin: 70px;
+    display: block;
+}
+
+.textcountdown{
+    font-family: 'IBMPlexSansThai-Bold';
+    font-size: 30px;
+    color: #FFF;
+    margin-top: 1rem;
+}
+
+.countdown{
+    display: flex;
+    margin-top: -50px;
+}
+
+.countdown div{
+    font-family: 'IBMPlexSansThai-Bold';
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: black;
+    margin: 0 46px 15px;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.countdown div:before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    color: black;
+    font-size: 0.35em;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.countdown #days:before {
+    content: 'วัน';
+    font-family: 'IBMPlexSansThai-Regular';
+}
+
+.countdown #hours:before {
+    content: 'ชั่วโมง';
+    font-family: 'IBMPlexSansThai-Regular';
+}
+
+.countdown #min:before {
+    content: 'นาที';
+    font-family: 'IBMPlexSansThai-Regular';
+}
+
+.countdown #sec:before {
+    content: 'วินาที';
+    font-family: 'IBMPlexSansThai-Regular';
+}
+
+/* Time-mobile */
+@media (max-width: 767px) {
+    .countdown{
+        display: flex;
+        margin-top: -80px;
+        margin-left: -45px;
+    }
+
+    .countdown div{
+        font-family: 'IBMPlexSansThai-Bold';
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        color: black;
+        margin: 0 15px;
+        font-size: 3em;
+        font-weight: 500;
+    }
+
+    .countdown-header {
+        background: url(../img/headweb.png) center;
+        background-size: 200% 200px;
+        background-size: cover;
+        text-align: center;
+        padding: 1px;
+        margin: 80px;
+        display: block;
+    }
+}
+
+/*navbar bootstrap */
+.navbar[data-c-ymammcc12] {
+    background: url(../img/headweb.png) no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar[data-c-ymammcc12] {
+        padding: 0;
+        background-size: 100% 70px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+}
+
+.nav-link {
+    font-family: 'IBMPlexSansThai-Regular';
+    font-size: 18px;
+}
+
+.nav-item a:hover {
+    color: rgb(255, 174, 212) !important;
+    cursor: pointer;
+}
+
+.nav-item > .active {
+    color: rgb(255, 174, 212) !important;
+}
+
+.nav-item {
+    padding-left: .2rem;
+    padding-right: 1rem;
+}
+
+.bpse-logo[data-v-wwwgg123], .bpse-lineimg[data-g-wwwee54]{
+   max-width: 100%;
+}
+
+.bpse-lineimg[data-g-wwwee54] {
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    bottom: -7px;
+    left: 0;
+}
+
+.newshead {
+    font-family: 'IBMPlexSansThai-Bold';
+    font-size: 35px;
+}
+
+hr.new1 {
+    border: 5px solid #ff9ee4;
+    border-radius: 0;
+}
+
+hr.new2 {
+    border: 2px solid #FFF;
+    border-radius: 0;
+}
+
+hr.new3 {
+    border: 1px solid #000;
+    border-radius: 0;
+}
+
+.textdetail {
+    font-family: 'IBMPlexSansThai-Medium';
+    text-align: center;
+}
+
+.bpselection-party[data-r-waa58]{
+    background: url(../img/headweb.png) center;
+    background-size: 200% 200px;
+    background-size: cover;
+    text-align: center;
+    padding: 8px;
+    margin: 20px;
+    display: block;
+}
+
+.bpselection-candidate[data-v-foekl12]{
+    background: url(../img/headweb.png) center;
+    background-size: 200% 200px;
+    background-size: cover;
+    text-align: center;
+    padding: 8px;
+    margin: 20px;
+    display: block;
+}
+
+.party {
+    font-family: 'IBMPlexSansThai-Bold';
+    color: #FFF;
+    margin-top: 0.5rem;
+}
+
+.candidate {
+    font-family: 'IBMPlexSansThai-Bold';
+    color: #FFF;
+    margin-top: 0.5rem;
+}
+
+.partyname{
+    font-family: 'IBMPlexSansThai-Medium';
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+/* partylogo onfirstpage */
+.img-partylogo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.partylogoname {
+    font-family: 'IBMPlexSansThai-Medium';
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    .logo img{
+        width: 30vw; 
+        margin-top: 0.5rem;
+    }
+
+    .textcountdown{
+        font-family: 'IBMPlexSansThai-Bold';
+        font-size: 20px;
+        color: #FFF;
+        margin-top: 1rem;
+    }
+
+    .bpselection-party {
+        background: url(../img/bpselection-head.png) center;
+        background-size: cover;
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        display: block;
+    }
+
+    .bpselection-candidate {
+        background: url(../img/bpselection-head.png) center;
+        background-size: cover;
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        display: block;
+    }
+
+    .party {
+        font-family: 'IBMPlexSansThai-Bold';
+        font-size: 20px;
+        color: #FFF;
+        margin-top: 0.5rem;
+    }
+
+    .candidate {
+        font-family: 'IBMPlexSansThai-Bold';
+        font-size: 20px;
+        color: #FFF;
+        margin-top: 0.5rem;
+    }
+}
+
+.credit {
+    font-family: 'IBMPlexSansThai-Regular';
+}
+
+.partyhead1 {
+    font-family: 'IBMPlexSansThai-Bold';
+    font-size: 30px;
+}
+
+/* partyprofile */
+.profiletop {
+    margin-top: -100px;
+}
+
+.img-profileparty01 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.partynameonlist {
+    font-family: 'IBMPlexSansThai-Bold';
+    font-size: 25px;
+    color: #000;
+}
+
+.partynamedetail {
+    font-family: 'IBMPlexSansThai-Regular';
+    font-size: 20px;
+    color: #000;
+}
+
+/* buttononeandallparty */
+.pprr {
+    font-size: 18px;
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+.allparty {
+    font-size: 18px;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+.partylistheader {
+    font-family: 'IBMPlexSansThai-Bold';
+    font-size: 25px;
+    color: #000;
+}
+
+/* table */
+.tablehead {
+    font-family: 'IBMPlexSansThai-Bold';
+    font-size: 20px;
+}
+
+.listname {
+    font-family: 'IBMPlexSansThai-Medium';
+}
+
+.table-custom {
+    background-color: #ffa6be;
+    color: #000;
+}
+
+.table-custom1 {
+    background-color: #be9eff;
+    color: #000;
+}
+
+.table-custom2 {
+    background-color: #e2ff9e;
+    color: #000;
+}
+
+.table-f {
+    background-color: #fdc48a;
+    color: #a15227;
+}
+
+.table-custom3 {
+    background-color: #ff9c7a;
+    color: #000;
+}
+
+.table-custom4 {
+    background-color: #ffe97a;
+    color: #000;
+}
+
+.table-custom5 {
+    background-color: #ffc2d9;
+    color: #000;
+}
+
+.table-custom6 {
+    background-color: #c2fff5;
+    color: #000;
+}
+
+.table-custom7 {
+    background-color: #efffc2;
+    color: #000;
+}
+
+.table-custom8 {
+    background-color: #ffcbc2;
+    color: #000;
+}
+
+/* admin */
+.admin {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+/* detailslogan */
+.detailslogan {
+    font-family: 'IBMPlexSansThai-Medium';
+}
+
+/* img-profilepartyonfistpage */
+.img-profilepartyonfistpage01 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.row-profile {
+    margin-top: -30px;
+}
+
+/* candidatenameonfistpage */
+.candidatenameonfistpage {
+    font-family: 'IBMPlexSansThai-Bold';
+    font-size: 20px;
+}
+
+.candidatedetailpartyonfistpage {
+    font-family: 'IBMPlexSansThai-Regular';
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+/* number */
+.number {
+    font-family: 'IBMPlexSansThai-Bold';
+    font-size: 25px;
+}
+
+/* breadcrumb */
+.breadcrumb{
+    font-family: 'IBMPlexSansThai-Medium';
+    font-size: 18px;
+}
+
+.page-link {
+    font-family: 'IBMPlexSansThai-Medium';
+    font-size: 16px;
+}
+
+/* error */
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #notfound {
+    position: relative;
+    height: 100vh;
+  }
+  
+  #notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  .notfound {
+    max-width: 767px;
+    width: 100%;
+    line-height: 1.4;
+    padding: 0px 15px;
+  }
+  
+  .notfound .notfound-404 {
+    position: relative;
+    height: 150px;
+    line-height: 150px;
+    margin-bottom: 25px;
+  }
+  
+  .notfound .notfound-404 h1 {
+    font-family: 'IBMPlexSansThai-Bold';
+    color: black;
+    font-size: 100px;
+    font-weight: 900;
+    margin: 0px;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .notfound h2 {
+    font-family: 'IBMPlexSansThai-Medium';
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .notfound p {
+    font-family: 'IBMPlexSansThai-Regular';
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  }
+  
+  .notfound a {
+    font-family: 'IBMPlexSansThai-Regular';
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    background: #5c91fe;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 1px;
+    margin-top: 15px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  
+  .notfound a:hover {
+    opacity: 0.8;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .notfound .notfound-404 {
+      height: 110px;
+      line-height: 110px;
+    }
+    .notfound .notfound-404 h1 {
+      font-size: 65px;
+    }
+  }
+
+/* bglivedebate */
+.bg-debatelive {
+    margin-top: 0;
+    padding: 5em 0;
+    background: url(../img/bg-livedebate.png);
+    background-size: cover;
+    position: relative;
+}
+
+.gghl21 {
+    font-family: 'IBMPlexSansThai-Medium';
+    font-size: 20px;
+    color: #FFF;
+}
+
+/* embed */
+.embed-container {
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
+/* sweet alert */
+.swal2-title, .swal2-actions{
+    font-family: 'IBMPlexSansThai-Bold';
+}
+
+.swal2-content {
+    font-family: 'IBMPlexSansThai-Medium';
+}
+
+
+.bimage {
+    max-width: 100%;
+}
+
+.be-bottom {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    background: linear-gradient(180deg,transparent,var(--tag-color))!important;
+}
+
+.height-100-percentage {
+    height: 100%;
+}
+
+.text-hover p:hover {
+    color: rgb(255, 174, 212) !important;
+    cursor: pointer;
+}
+
+.bgci{
+    position: relative;
+    overflow: hidden;
+}
+
+.bgnews {
+    background: linear-gradient(90deg, rgba(0,33,108,1) 0%, rgba(252,38,96,1) 100%);
+}
+
+.we-100 {
+    width: 100%!important;
+}
+
+.newshead a:hover {
+    color: rgb(255, 174, 212) !important;
+    cursor: pointer;
+}
+
+.main {
+    position: relative;
+}
+
+.pos {
+    position: relative!important;
+}
+
+.paragrahnews {
+    height: auto;
+    width: 100%;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    z-index: 1;
+    background-color: rgb(255, 174, 212);
+    margin-top: 60px;
+}
+
+.bg-custom{
+    background-color: #122946;
+    padding: 5px;
+}
+
+.paragrahnews-title{
+    font-family: 'IBMPlexSansThai-Bold';
+    color: #122946;
+    margin-top: .2rem;
+}
+
+.head-title {
+    font-family: 'IBMPlexSansThai-Medium';
+    font-size: 18px;
+}
+
+.detailnews p{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+.written-by{
+    font-family: 'IBMPlexSansThai-Regular';
+    color: #122946;
+    font-size: 20px;
+}
+
+.img-logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: .1rem;
+    margin-right: .5rem;
+}
+
+
+@media (max-width: 575px) {
+    .resm {
+        margin-top: -20px;
+    }
+}
+
+
+.paragrahlive {
+    height: auto;
+    width: 100%;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(108,0,0,1) 0%, rgba(252,38,96,1) 100%);
+    margin-top: 60px;
+}
+
+.paragrahlive-title{
+    font-family: 'IBMPlexSansThai-Bold';
+    color: #FFF;
+    margin-top: .2rem;
+}
+
+.livet{
+    font-family: 'IBMPlexSansThai-Medium';
+    color: #FFF;
+    font-size: 25px;
+}
+
+.breaking {
+    background-color: #ffe001 !important;
+}
+
+.head {
+    font-family: 'IBMPlexSansThai-Bold';
+}
+
+.textreport {
+    font-family: 'IBMPlexSansThai-ExtraLight';
+}
+
+/* allbgcustom */
+.bg-custom1{
+    background-color: #bb596b;
+}
+
+.bg-custom2{
+    background-color: #00909e;
+}
+
+.bg-custom3{
+    background-color: #52afbd;
+}
+
+.bg-custom4{
+    background-color: #5f9ea0;
+}
+
+.bg-custom5{
+    background-color: #ea9a96;
+}
+
+.bg-custom6{
+    background-color: #6f0000;
+}
+
+.bg-custom7{
+    background-color: #ff847c;
+}
+
+.bg-custom8{
+    background-color: #3b6978;
+}
+
+.newspa {
+    font-family: 'IBMPlexSansThai-Medium';
+    font-size: 17px;
+}
+
+.score {
+    font-family: 'IBMPlexSansThai-Bold';
+    font-size: 25px;
+}
+
+.yyu{
+    font-family: 'IBMPlexSansThai-Bold';
+    font-size: 25px;
+    color: white;
+}
